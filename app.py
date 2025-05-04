@@ -524,4 +524,4 @@ class UzumParser:
                 all_product_links = all_product_links[:limit]
                 logger.info(f"Ограничено количество ссылок до {limit}")
             
-            return all
+            return all_product_links
