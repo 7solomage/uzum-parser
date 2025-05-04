@@ -18,10 +18,10 @@ COPY . .
 # Установка зависимостей
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Переменная среды для ChromeDriver
+# Настройка окружения для Chrome
 ENV PYTHONUNBUFFERED=1
-ENV CHROMEDRIVER_PATH=/usr/bin/chromedriver
 ENV CHROME_BIN=/usr/bin/chromium
+ENV CHROMEDRIVER_PATH=/usr/bin/chromedriver
 
 # Указание порта
 EXPOSE 5000
